@@ -42,7 +42,7 @@ sh ./build.sh
           "purpose": "maskable any"
         },
         {
-          "src": "out/icon-286x286.png",
+          "src": "out/icon-512x512.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "maskable any"
