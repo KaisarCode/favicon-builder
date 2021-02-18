@@ -11,13 +11,13 @@ convert -resize 3000 -background $ibg -gravity center $src/icon.svg $src/icon-hd
 convert -resize 3000 -background $ibg -gravity center $src/splash.svg $src/splash-hd.png;
 convert -resize 3000 -background $ibg -gravity center $src/mstile.svg $src/mstile-hd.png;
 
-echo 'Img Source icon.';
+echo '(0/5) Img Source icon.';
 convert -resize 110 -background $ibg -gravity center $src/icon-hd.png $out/img-src.png;
 
-echo 'Legacy favicon.';
+echo '(1/5) Legacy favicon.';
 convert -define icon:auto-resize=64,48,32,16 -background $ibg -gravity center $src/icon-hd.png $out/favicon.ico;
 
-echo 'Stand alone favicons.';
+echo '(2/5) Stand alone favicons.';
 convert -resize 16 -background $ibg -gravity center $src/icon-hd.png $out/icon-16x16.png;
 convert -resize 32 -background $ibg -gravity center $src/icon-hd.png $out/icon-32x32.png;
 convert -resize 96 -background $ibg -gravity center $src/icon-hd.png $out/icon-96x96.png;
@@ -26,15 +26,17 @@ convert -resize 152 -background $ibg -gravity center $src/icon-hd.png $out/icon-
 convert -resize 167 -background $ibg -gravity center $src/icon-hd.png $out/icon-167x167.png;
 convert -resize 180 -background $ibg -gravity center $src/icon-hd.png $out/icon-180x180.png;
 convert -resize 192 -background $ibg -gravity center $src/icon-hd.png $out/icon-192x192.png;
+convert -resize 256 -background $ibg -gravity center $src/icon-hd.png $out/icon-256x256.png;
+convert -resize 384 -background $ibg -gravity center $src/icon-hd.png $out/icon-384x384.png;
 convert -resize 512 -background $ibg -gravity center $src/icon-hd.png $out/icon-512x512.png;
 
-echo 'MSTiles.';
+echo '(3/5) MSTiles.';
 convert -resize 70 -background $ibg -gravity center -extent 70 $src/mstile-hd.png $out/mstile-70x70.png;
 convert -resize 270 -background $ibg -gravity center -extent 270 $src/mstile-hd.png $out/mstile-270x270.png;
 convert -resize 310 -background $ibg -gravity center -extent 310 $src/mstile-hd.png $out/mstile-310x310.png;
 convert -resize 310x150 -background $ibg -gravity center -extent 310x150 $src/mstile-hd.png $out/mstile-310x150.png;
 
-echo 'PWA splash screens.';
+echo '(4/5) PWA splash screens.';
 convert -resize 2048x2732 -background $sbg -gravity center -extent 2048x2732 $src/splash-hd.png $out/splash-2048x2732.png;
 convert -resize 2732x2048 -background $sbg -gravity center -extent 2732x2048 $src/splash-hd.png $out/splash-2732x2048.png;
 convert -resize 1668x2388 -background $sbg -gravity center -extent 1668x2388 $src/splash-hd.png $out/splash-1668x2388.png;
@@ -62,4 +64,4 @@ convert -resize 1334x750 -background $sbg -gravity center -extent 1334x750 $src/
 convert -resize 640x1136 -background $sbg -gravity center -extent 640x1136 $src/splash-hd.png $out/splash-640x1136.png;
 convert -resize 1136x640 -background $sbg -gravity center -extent 1136x640 $src/splash-hd.png $out/splash-1136x640.png;
 
-echo 'Done!';
+echo '(5/5) Done!';

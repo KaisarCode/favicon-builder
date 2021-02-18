@@ -24,13 +24,25 @@ sh ./build.sh
 {
     "icons": [
         {
-          "src": "out/icon-192.png",
+          "src": "out/icon-192x192.png",
           "sizes": "192x192",
           "type": "image/png",
           "purpose": "maskable any"
         },
         {
-          "src": "out/icon-512.png",
+          "src": "out/icon-256x256.png",
+          "sizes": "256x256",
+          "type": "image/png",
+          "purpose": "maskable any"
+        },
+        {
+          "src": "out/icon-384x384.png",
+          "sizes": "384x384",
+          "type": "image/png",
+          "purpose": "maskable any"
+        },
+        {
+          "src": "out/icon-286x286.png",
           "sizes": "512x512",
           "type": "image/png",
           "purpose": "maskable any"
